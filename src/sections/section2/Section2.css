@@ -1,0 +1,108 @@
+.bg-sec-2 {
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+
+.bg-abs {
+	width: 100%;
+	display: flex;
+	position: absolute;
+	top: 0;
+	flex-direction: column;
+}
+
+.center-tx {
+	width: 20%;
+	text-align: center;
+}
+
+.text-title {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.title-sec2 {
+	color: black;
+	font-size: 27px;
+	word-spacing: 2px;
+	margin: 1.5rem 0;
+	font-family: "Inter";
+	font-weight: bold;
+}
+
+.sub-title-sec2 {
+    color: #908c8c;
+    font-size: 20px;
+    word-spacing: 2px;
+    margin: 1rem 0;
+    font-family: "Inter";
+    line-height: 2.5rem;
+}
+
+.text-title span {
+	color: black;
+	font-size: 2rem;
+	word-spacing: 2px;
+	font-family: "Poppins";
+}
+
+.card-content {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 4rem;
+}
+
+.grid-items {
+	width: 60%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 70px;
+}
+
+.items {
+	padding: 4rem;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	border-radius: 15px 0 15px 15px;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.alt-img {
+	height: 40%;
+	display: flex;
+	flex-direction: row;
+}
+
+.alt-img :first-child {
+	width: 35%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.alt-img :not(:first-child) {
+	width: 65%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.img-in {
+    height: 70vh;
+    background-color: #908c8c;
+    width: 100%;
+}
+
+.img-in img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
