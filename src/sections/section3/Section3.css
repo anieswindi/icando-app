@@ -1,0 +1,165 @@
+.bg-sec3 {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.top-ctn {
+	width: 100%;
+	height: 900px;
+	display: flex;
+	justify-content: center;
+}
+
+.demo {
+	width: 80%;
+	height: 100%;
+	background-color: #68d8f3;
+	border-radius: 20px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	display: flex;
+	flex-direction: column;
+	padding: 4rem;
+}
+
+.title-sec3 {
+	color: white;
+	font-size: 2rem;
+	word-spacing: 2px;
+	font-family: "Poppins";
+	text-align: center;
+}
+
+.tabels {
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	width: 100%;
+	margin-top: 2rem;
+}
+
+.btm-ctn {
+	width: 100%;
+	height: 650px;
+	background-color: gold;
+	margin-top: 4rem;
+}
+
+.input-control {
+	background-color: white;
+	height: 90px;
+	border-radius: 15px 0 15px 15px;
+	border: unset;
+	width: 70%;
+	padding: 1rem;
+	font-size: 1.5rem;
+	color: black;
+	font-family: "Poppins";
+}
+
+.input-control:focus {
+	outline: none;
+}
+
+.customize {
+	justify-content: space-between;
+	margin-top: 2rem;
+}
+
+.btn-add {
+	width: 100%;
+	height: 90px;
+	display: flex;
+	justify-content: left;
+}
+
+.btn-add-sec3 {
+	width: 50%;
+	height: 100%;
+	background-color: #14bde7;
+	margin-top: 2rem;
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.btn-add-sec3 span {
+	color: white;
+	font-size: 1.5rem;
+	font-family: "Poppins";
+	margin: auto;
+}
+
+.btn-split,
+.btn-del {
+	width: 50%;
+	height: 90px;
+	background-color: #14bde7;
+	margin: 1rem auto;
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+}
+.total-text {
+	color: white;
+	font-size: 1.5rem;
+	font-family: "Poppins";
+	text-align: center;
+}
+.btn-split span,
+.btn-del span {
+	color: white;
+	font-size: 1.5rem;
+	font-family: "Poppins";
+	margin: auto;
+}
+
+.errText {
+	color: red;
+	font-size: 1rem;
+	font-family: "Poppins";
+	margin-top: 0.5rem;
+}
+
+.wrap-pd {
+	padding: 0 5rem;
+}
+
+.plus {
+	width: 90px;
+	height: 90px;
+	background-color: #81ef81;
+	border-radius: 15px;
+	display: flex;
+	cursor: pointer;
+}
+
+.bg-grey {
+	background-color: #d6d6d6;
+}
+
+.minus {
+	width: 90px;
+	height: 90px;
+	background-color: #fdaaaa;
+	border-radius: 15px;
+	display: flex;
+	cursor: pointer;
+}
+
+.red-text {
+	font-size: 4rem;
+	color: red;
+	margin: auto;
+	font-weight: bold;
+}
+
+.green-text {
+	font-size: 4rem;
+	color: green;
+	margin: auto;
+	font-weight: bold;
+}

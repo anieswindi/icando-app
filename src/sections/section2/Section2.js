@@ -10,8 +10,9 @@ import num2_p2 from "../../assets/2.png";
 import num3_p3 from "../../assets/3.png";
 import num4_p4 from "../../assets/4.png";
 
+import bg from "../../assets/sec_2.png";
 
-import bg from "../../assets/sec_2.png"
+import { ArrowRight } from "react-bootstrap-icons";
 
 class Section2 extends Component {
 	constructor(props) {
@@ -78,6 +79,7 @@ class Section2 extends Component {
 		});
 		return (
 			<div className="bg-sec-2">
+				<div className="none"></div>
 				<div className="img-in">
 					<img src={bg} alt="bg-img" />
 				</div>
@@ -89,6 +91,12 @@ class Section2 extends Component {
 					</div>
 					<div className="card-content">
 						<div className="grid-items">{items}</div>
+						<div className="btn-sec2">
+							<div className="d-flex flex-row justify-content-center">
+								<span>Hubungi Kami</span>
+								<ArrowRight />
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
