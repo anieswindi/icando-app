@@ -2,233 +2,84 @@
 	width: 100%;
 	height: 100%;
 	background-color: white;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
 }
 
-.bg-img-custom {
+.btm-ctn {
 	width: 100%;
-	height: 1600px;
-	position: relative;
-}
-
-.bg-img-custom img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	position: absolute;
-}
-
-.bg-abs-top {
-	position: absolute;
-	top: 0;
-	width: 100%;
-	height: 751px;
+	height: 650px;
+	margin-top: 4rem;
 	display: flex;
 	justify-content: center;
+	margin-bottom: 5rem;
 }
 
-.card-form {
-	width: 1291px;
-	background-color: #cca3c8;
-	height: 100%;
-	border-radius: 15px 0 15px 15px;
-	padding: 3rem;
-	display: flex;
-	flex-direction: column;
-}
-
-.form-wrap {
-	width: 43%;
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 1rem;
-}
-
-.pad-4 {
-	padding-left: 2rem;
-	height: 100%;
-}
-
-.form-send {
-	display: flex;
-	flex-direction: column;
-	width: 60%;
-}
-
-.top-form {
-	display: flex;
-	flex-direction: row;
-	height: 70%;
-}
-
-.text-title-4 {
+.btn-add-sec3 span {
 	color: white;
-	font-size: 2rem;
-	word-spacing: 2px;
-	font-family: "Poppins";
-	margin: 1rem 0;
-}
-.form-title {
-	color: white;
-	font-size: 20px;
-	word-spacing: 2px;
-	font-family: "Poppins";
-}
-
-.sub-title-4 {
-	color: #908c8c;
-	font-size: 20px;
-	word-spacing: 2px;
-	font-family: "Inter";
-	line-height: 2.5rem;
-}
-
-.form-control-custom-4 {
-	width: 100%;
-	height: 80px;
-	border-radius: 15px 0 15px 15px;
-	background-color: white;
-	border: unset;
-	margin: 1rem 0;
-	font-size: 20px;
-	padding: 0.5rem 1rem;
-}
-
-.textarea-custom-4 {
-	width: 100%;
-	height: 251px;
-	border-radius: 15px 0 15px 15px;
-	background-color: white;
-	border: unset;
-	margin: 1rem 0;
-	padding: 1rem;
-	font-size: 20px;
-}
-
-.form-control-custom-4:focus,
-.textarea-custom-4:focus {
-	outline: unset;
-}
-
-.btm-form {
-	height: 80px;
-	width: 100%;
-	display: flex;
-	justify-content: flex-end;
-	margin-top: 1rem;
-}
-
-.btn-send-4 {
-	width: 40%;
-	height: 100%;
-	background-color: #2fc9ef;
-	border-radius: 15px 0 15px 15px;
-	display: flex;
-	justify-content: center;
-	cursor: pointer;
-}
-
-.btn-send-4 span {
-	color: white;
-	font-size: 20px;
-	word-spacing: 2px;
+	font-size: 1.5rem;
 	font-family: "Poppins";
 	margin: auto;
 }
 
-.btn-send-4 svg {
-	color: white;
-	margin: auto auto auto 1rem;
-	height: 32px;
-	width: 32px;
-}
-
-.bg-right-4 {
-	position: absolute;
-	top: 11%;
-	width: 525px;
-	height: 586px;
-	right: 9%;
-}
-
-.bg-right-4 img:first-child {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
-.bg-right-4 :nth-child(4) {
-	width: 30px;
-	height: 30px;
-	object-fit: contain;
-	top: 50%;
-	left: 54%;
-}
-
-.bg-right-4 :nth-child(5) {
-	width: 71px;
-	height: 71px;
-	object-fit: contain;
-	top: 47%;
-	left: 50%;
-}
-
-.bg-right-4 :nth-child(6) {
-	width: 57px;
-	height: 57px;
-	object-fit: contain;
-	top: 6%;
-	right: 9%;
-}
-
-.bg-right-4 :nth-child(7) {
-	width: 29px;
-	height: 30px;
-	object-fit: contain;
-	top: 8%;
-	right: 12%;
-}
-
-.contact {
-	width: 100%;
-	height: 419px;
-	position: absolute;
-	bottom: 11%;
-	z-index: 1;
-	display: flex;
-	justify-content: center;
-}
-
-.pd-2 {
-	padding: 0 2rem;
-}
-
-.listed {
-	width: 65% !important;
-	display: flex;
-	flex-direction: row;
-}
-
-.text-1 {
-	color: white;
-	font-size: 20px;
-	word-spacing: 2px;
-	font-family: "Inter";
-	margin-top: 1rem;
-	line-height: 2.5rem;
-}
-
-.tx-custom :first-child {
-	color: white;
-	font-size: 20px;
-	word-spacing: 2px;
-	font-family: "Inter";
-	margin-bottom: 2rem;
-}
-
-.tx-custom :not(:first-child) {
-	color: white;
+.content-txt {
+	color: black;
 	font-size: 16px;
 	word-spacing: 2px;
-	font-family: "Inter";
-	margin-bottom: 1rem;
+	font-family: "Poppins";
+	margin-top: 1rem;
+	line-height: 2rem;
+}
+
+.content-name {
+	color: #14bde7;
+	font-size: 20px;
+	word-spacing: 2px;
+	font-family: "Poppins";
+	font-weight: bold;
+	margin-top: 1rem;
+}
+
+.content-add {
+	color: black;
+	font-size: 20px;
+	word-spacing: 2px;
+	font-family: "Poppins";
+	font-weight: bold;
+	margin-top: 1rem;
+}
+
+.text-title-2 {
+	color: black;
+	font-size: 2rem;
+	word-spacing: 2px;
+	font-family: "Poppins";
+	text-align: center;
+	margin: 2rem 0;
+	width: 100%;
+}
+
+.img-ava {
+	width: 100%;
+	height: 90px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.img-ava img {
+	width: 21%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+.card-item-slider {
+	width: 560px;
+	padding: 4rem;
+	min-height: 500px;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	border-radius: 15px 0 15px 15px;
 }

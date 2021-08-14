@@ -9,13 +9,13 @@ class Section1 extends Component {
 			<div className="bg-custom-sec">
 				<div className="d-box">
 					<img src={dd} alt="image-1" />
-					<div className="c-box-sticky">
+					{/* <div className="c-box-sticky">
 						<span>TENTANG</span>
 						<span>KENAPA TO DO APP?</span>
 						<span>DEMO SEDERHANA</span>
 						<span>TESTIMONI</span>
 						<span>KONTAK</span>
-					</div>
+					</div> */}
 					<div className="t-box">
 						<h1>Mudahkan Pencatatan Agenda Harianmu</h1>
 						<span>

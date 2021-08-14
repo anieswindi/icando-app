@@ -1,125 +1,70 @@
 import React, { Component } from "react";
 import "./Section4.css";
-import images from "../../assets/sec4.jpg";
-import { ArrowRight } from "react-bootstrap-icons";
-import bg from "../../assets/map1.png";
-import bg2 from "../../assets/map2.png";
-import bg3 from "../../assets/map3.png";
-import bg4 from "../../assets/map5.png";
-import bg5 from "../../assets/map6.png";
-import rec1 from "../../assets/rec1 (1).png";
-import rec2 from "../../assets/rec1 (2).png";
-import text1 from "../../assets/text1.png";
+import avatar1 from "../../assets/avatar1.png";
+import avatar2 from "../../assets/avatar2.png";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 class Section4 extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			testimonies: [
+				{
+					id_testimoni: 0,
+					name: "Elsa Nurulwati",
+					address: "Bandung",
+					avatar: avatar1,
+					testimoni:
+						"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+				},
+				{
+					id_testimoni: 1,
+					name: "Jack Froze",
+					address: "Jakarta",
+					avatar: avatar2,
+					testimoni:
+						"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+				},
+				{
+					id_testimoni: 2,
+					name: "Ana Aisyah",
+					avatar: avatar2,
+					address: "Papua",
+					testimoni:
+						"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+				},
+			],
+		};
+	}
 	render() {
 		return (
 			<div className="bg-sec4">
-				<div className="bg-img-custom">
-					<div className="contact">
-						<div className="listed col-md-12">
-							<div className="col-md-6 h-100 pd-2">
-								<span className="text-1">
-									Amazing To Do App adalah perusahaan yang
-									bergerak dalam pengembangan aplikasi to do
-									list untuk memudahkan pengguna dalam
-									mengatur kebutuhan catatan harian.
-									<br />
-									Pengalaman kami didasari oleh research dan
-									beberapa fakta lapangan yang menjadikan
-									produk kami lebih unggul dibandingkan produk
-									yang lain.
-								</span>
-							</div>
-							<div className="col-md-2 h-100 pd-2 d-flex flex-column tx-custom">
-								<span>PERUSAHAAN</span>
-								<span>Tentang Perusahaan</span>
-								<span>Tentang Kami</span>
-								<span>Penelitian</span>
-								<span>Konsultasi</span>
-								<span>Karir</span>
-							</div>
-							<div className="col-md-2 h-100 pd-2 d-flex flex-column tx-custom">
-								<span>TIM AHLI</span>
-								<span>Tim Kami</span>
-							</div>
-							<div className="col-md-2 h-100 pd-2 d-flex flex-column tx-custom">
-								<span>KONTAK</span>
-								<span>Hubungi Kami</span>
-								<span>Lokasi Kami</span>
-								<span>Sosial Media</span>
-							</div>
-						</div>
-					</div>
-					<img src={images} alt="sec4" />
-					<div className="bg-abs-top">
-						<div className="card-form">
-							<div className="form-wrap">
-								<span className="text-title-4">
-									{" "}
-									Tertarik Untuk Mencoba? Kirimkan Kami Pesan{" "}
-								</span>
-								<span className="sub-title-4">
-									Jika anda punya pertanyaan mengenai aplikasi
-									kami, anda dapat kirim pesan melalui form di
-									bawah.
-								</span>
-							</div>
-							<div className="form-send">
-								<div className="top-form">
-									<div className="col-md-6 d-flex flex-column">
-										<div>
-											<span className="form-title">
-												NAMA LENGKAP
-											</span>
-											<input
-												placeholder="Nama Anda?"
-												type="text"
-												className="form-control-custom-4"
-											/>
-										</div>
-										<div>
-											<span className="form-title">
-												ALAMAT EMAIL
-											</span>
-											<input
-												placeholder="Masukkan email valid anda"
-												type="text"
-												className="form-control-custom-4"
-											/>
-										</div>
-									</div>
-									<div className="col-md-6 pad-4">
-										<div className="d-flex flex-column h-100">
-											<span className="form-title">
-												PESAN ANDA
-											</span>
-											<textarea
-												placeholder="Ceritakan pertanyaan anda"
-												type="text"
-												className="textarea-custom-4"
-											/>
-										</div>
-									</div>
+				<span className="text-title-2">Testimoni Pengguna</span>
+
+				<div className="btm-ctn">
+					{this.state.testimonies.map((testimoni, index) => {
+						return (
+							<div
+								className="card-item-slider"
+								key={`testimoni-${index}`}
+							>
+								<div className="img-ava">
+									<img src={testimoni.avatar} alt="ava" />
 								</div>
-								<div className="btm-form">
-									<div className="btn-send-4">
-										<span>Kirim</span>
-										<ArrowRight />
-									</div>
-								</div>
+								<span className="content-txt">
+									{testimoni.testimoni}
+								</span>
+								<span className="content-name">
+									{testimoni.name}
+								</span>
+								<span className="content-add">
+									{testimoni.address}
+								</span>
 							</div>
-						</div>
-						<div className="bg-right-4">
-							<img src={bg} alt="bg" />
-							<img src={bg2} alt="bg2" />
-							<img src={bg3} alt="bg3" />
-							<img src={bg4} alt="bg4" />
-							<img src={bg5} alt="bg5" />
-							<img src={rec1} alt="rec1" />
-							<img src={rec2} alt="rec2" />
-						</div>
-					</div>
+						);
+					})}
 				</div>
 			</div>
 		);
