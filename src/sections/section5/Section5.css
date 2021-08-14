@@ -53,21 +53,18 @@
 	height: 100%;
 	object-fit: fill;
 	position: absolute;
-	transform: scale(2.1)
+	transform: scale(2.1);
 }
 
 .bg-grad {
 	width: 100%;
-    height: 100%;
-    border-radius: 15px 0 15px 15px;
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    left: 0;
-    background-image: linear-gradient(
-179deg
-, transparent, #cca3c8);
-
+	height: 100%;
+	border-radius: 15px 0 15px 15px;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	left: 0;
+	background-image: linear-gradient(179deg, transparent, #cca3c8);
 }
 
 .form-wrap {
@@ -186,12 +183,14 @@
 	height: 586px;
 	right: 9%;
 	z-index: 1;
+	border-radius: 15px;
 }
 
 .bg-right-4 img:first-child {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	border-radius: 15px;
 }
 
 .bg-right-4 :nth-child(4) {
@@ -304,4 +303,115 @@
 	font-size: 16px;
 	font-family: "Poppins";
 	margin-bottom: 1rem;
+}
+
+.text-s {
+	z-index: 1;
+	position: absolute;
+	bottom: 5%;
+	width: 65%;
+	padding: 0 2rem;
+	color: white;
+	font-size: 20px;
+	line-height: 2rem;
+}
+@media screen and (min-width: 1366px) and (max-width: 1648px) {
+	.card-form {
+		width: 900px;
+	}
+	.text-title-4 {
+		font-size: 16px;
+	}
+
+	.sub-title-4 {
+		font-size: 14px;
+	}
+
+	.bg-abs-top {
+		height: 638px;
+	}
+	.form-wrap {
+		width: 47%;
+	}
+
+	.bg-right-4 {
+		top: 20%;
+		width: 362px;
+		height: 419px;
+	}
+
+	.form-title {
+		font-size: 16px;
+	}
+
+	.form-control-custom-4 {
+		font-size: 14px;
+		height: 70px;
+	}
+
+	.textarea-custom-4 {
+		height: 213px;
+		font-size: 14px;
+	}
+
+	.btm-form {
+		height: 70px;
+	}
+
+	.btn-send-4 {
+		width: 35%;
+	}
+
+	.btn-send-4 span {
+		font-size: 16px;
+	}
+
+	.bg-right-4 :nth-child(7) {
+		top: 9%;
+		right: 13%;
+	}
+
+	.bg-right-4 :nth-child(4) {
+		top: 52%;
+		left: 55%;
+	}
+
+	.form-send {
+		width: 70%;
+	}
+
+	.bg-img-custom {
+		height: 1323px;
+	}
+
+	.text-1 {
+		font-size: 16px;
+		line-height: 2rem;
+	}
+
+	.tx-custom :first-child {
+		font-size: 14px;
+	}
+
+	.tx-custom :not(:first-child) {
+		font-size: 12px;
+	}
+
+	.f-text span {
+		font-size: 14px;
+	}
+
+	.contact {
+		height: 318px;
+	}
+
+	.listed {
+		width: 80% !important;
+	}
+
+	.text-s {
+		width: 70%;
+		font-size: 14px;
+		line-height: unset;
+	}
 }

@@ -122,6 +122,16 @@ class Section5 extends Component {
 							<img src={bg5} alt="bg5" />
 							<img src={rec1} alt="rec1" />
 							<img src={rec2} alt="rec2" />
+							<div className="d-flex flex-column text-s">
+								<span>Kelapa Gading, Jakarta Utara</span>
+								<span>
+									Jl. Rima Husada No.3, Kecamatan Jeruk Bali,
+									Jakarta Utara 685792
+								</span>
+								<span>
+									<b>p</b>&nbsp;085789666584
+								</span>
+							</div>
 						</div>
 					</div>
 

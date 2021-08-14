@@ -13,7 +13,7 @@
 	display: flex;
 	justify-content: center;
 	position: absolute;
-    margin-top: -10%;
+	margin-top: -10%;
 }
 
 .demo {
@@ -42,8 +42,6 @@
 	width: 100%;
 	margin-top: 2rem;
 }
-
-
 
 .input-control {
 	background-color: white;
@@ -116,7 +114,6 @@
 	margin: auto;
 }
 
-
 .errText {
 	color: red;
 	font-size: 1rem;
@@ -171,4 +168,40 @@
 	justify-content: flex-start;
 }
 
+@media screen and (min-width: 1366px) and (max-width: 1648px) {
+	.btn-split span,
+	.btn-del span,
+	.btn-add-sec3 span {
+		font-size: 1rem;
+	}
 
+	.btn-split,
+	.btn-del {
+		width: 70%;
+		height: 70px;
+	}
+
+	.input-control {
+		height: 70px;
+		font-size: 1rem;
+	}
+
+	.btn-add,
+	.btn-del {
+		height: 70px;
+	}
+	.plus,
+	.minus {
+		width: 70px;
+		height: 70px;
+	}
+
+	.green-text,
+	.red-text {
+		font-size: 3rem;
+	}
+
+	.top-ctn {
+		height: 700px;
+	}
+}
