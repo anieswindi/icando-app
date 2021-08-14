@@ -9,6 +9,7 @@ import bg4 from "../../assets/map5.png";
 import bg5 from "../../assets/map6.png";
 import rec1 from "../../assets/rec1 (1).png";
 import rec2 from "../../assets/rec1 (2).png";
+import sec5 from "../../assets/sec5svg.svg";
 
 class Section5 extends Component {
 	render() {
@@ -53,6 +54,10 @@ class Section5 extends Component {
 					<img src={images} alt="sec4" />
 					<div className="bg-abs-top">
 						<div className="card-form">
+							<div className="bg-grad"></div>
+							<div className="abs-img">
+								<img src={sec5} alt="sec5" />
+							</div>
 							<div className="form-wrap">
 								<span className="text-title-4">
 									{" "}

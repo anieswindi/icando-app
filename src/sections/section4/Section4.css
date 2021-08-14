@@ -10,10 +10,12 @@
 .btm-ctn {
 	width: 100%;
 	height: 650px;
-	margin-top: 4rem;
+	padding: 0 20rem;
+	/* margin-top: 4rem;
 	display: flex;
-	justify-content: center;
+	justify-content: center; */
 	margin-bottom: 5rem;
+	margin-top: 5rem;
 }
 
 .btn-add-sec3 span {
@@ -74,12 +76,39 @@
 }
 
 .card-item-slider {
-	width: 560px;
+	width: 560px !important;
 	padding: 4rem;
-	min-height: 500px;
-	display: flex;
+	margin: 0 2rem;
+	min-height: 500px !important;
+	display: flex !important;
 	flex-direction: column;
 	background-color: white;
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	border-radius: 15px 0 15px 15px;
+}
+
+.slider-cust {
+	display: flex;
+	justify-content: flex-end;
+}
+
+#slider-custom .slick-initialized .slick-slide {
+	width: 635px !important;
+}
+
+#slider-custom .slick-prev,
+#slider-custom .slick-next {
+	top: 25%;
+	border-radius: 50%;
+	background-color: white;
+    width: 40px;
+    height: 40px;
+	box-shadow: rgb(0 0 0 / 15%) 0px 15px 25px, rgb(0 0 0 / 5%) 0px 5px 10px;
+}
+
+#slider-custom .slick-prev:before,
+#slider-custom .slick-next:before {
+	font-size: 40px;
+	color: #2d73e2
+	;
 }
