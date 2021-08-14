@@ -1,9 +1,10 @@
 .bg-sec3 {
 	width: 100%;
-	height: 100%;
+	height: 80vh;
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 5rem;
+	position: relative;
 }
 
 .top-ctn {
@@ -11,6 +12,8 @@
 	height: 900px;
 	display: flex;
 	justify-content: center;
+	position: absolute;
+    margin-top: -10%;
 }
 
 .demo {
